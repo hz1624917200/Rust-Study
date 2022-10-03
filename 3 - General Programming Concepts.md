@@ -1,6 +1,6 @@
 # Rust - General Programming Concepts
 
-> &emsp;&emsp;本文对应《Rust权威指南》的第3章，主要介绍Rust中的通用编程概念，如
+> &emsp;&emsp;本文对应《Rust权威指南》的第3章，主要介绍Rust中的通用编程概念，如变量、数据类型、函数、程序控制流等。
 
 ## Variables & Mutability 变量与可变性
 
