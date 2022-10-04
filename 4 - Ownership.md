@@ -225,7 +225,7 @@ let b = &a[..2];
 
 let mut a = [1, 2, 3];	// mutable
 let b = &mut a[..];		// mutable slice
-b[0] = 0;				// edit mu
+b[0] = 0;				// edit mutable data
 ```
 
 * 不可变切片类型为`&[i32]`，可变切片类型为`&mut [i32]`
