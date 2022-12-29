@@ -13,6 +13,6 @@ fn main() {
 	for (c, count) in word_count {
 		println!("count of {} = {}", c, count);
 	}
-	word_count.get_mut(&'b');
+	// word_count.get_mut(&'b');
 	
 }
