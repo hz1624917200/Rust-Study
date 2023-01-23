@@ -1,4 +1,5 @@
 #[derive(Debug)]
+#[derive(Default)]
 struct Rectangle {
 	width: u32,
 	height: u32,
@@ -11,6 +12,8 @@ impl Rectangle {
 }
 
 fn main() {
+	let rect_default: Rectangle = Default::default();
+	print!("{:#?}", rect_default);
 	let rect1 = Rectangle {
 		width: 30,
 		height: 20,

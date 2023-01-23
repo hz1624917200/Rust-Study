@@ -1,9 +1,15 @@
-fn main() {
-	let s = String::from("Hello world");
-	let mut a = [1, 2, 3];
-	let b = &mut a[..];
-	b[0] = 0;
-	// a[0] = 3;	// error, mutable borrow twice
-	println!("{}, {}", s, b[0]);
-	
+// variable life circle test
+use std::io;
+
+fn main () {
+	let a = 1;
+	let mut buf = String::new();
+	io::stdin().read_line(&mut buf)
+		.expect("Reading error");
+	let guess: u32 = buf.trim().parse().unwrap_or(0);
+	if guess > 10 {
+		let a = 10u32;
+		println!("{}", a);
+	}
+	println!("{}", a);
 }

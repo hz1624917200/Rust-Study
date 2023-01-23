@@ -14,9 +14,9 @@ fn main() {
 		let mut guess = String::new();
         io::stdin().read_line(&mut guess)
         	.expect("read line error.");
-		// let guess: u32 = guess.trim().parse()
+		// let guess: u32 = guess.trim().parse()	// type annotation
 		// 	.expect("Parse error");
-		// let guess = guess.trim().parse::<u32>()
+		// let guess = guess.trim().parse::<u32>()	// turbofish
 		//	.expect("parse error");
 		let guess: u32 = match guess.trim().parse() {
 			Ok(num) => num,

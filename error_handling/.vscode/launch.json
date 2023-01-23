@@ -1,0 +1,45 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug executable 'error_handling'",
+			"cargo": {
+				"args": [
+					"build",
+					"--bin=error_handling",
+					"--package=error_handling"
+				],
+				"filter": {
+					"name": "error_handling",
+					"kind": "bin"
+				}
+			},
+			"args": [],
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug unit tests in executable 'error_handling'",
+			"cargo": {
+				"args": [
+					"test",
+					"--no-run",
+					"--bin=error_handling",
+					"--package=error_handling"
+				],
+				"filter": {
+					"name": "error_handling",
+					"kind": "bin"
+				}
+			},
+			"args": [],
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}
