@@ -1,0 +1,14 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "collection_test/Cargo.toml",
+    "enums/Cargo.toml",
+    "error_handling/Cargo.toml",
+    "first/Cargo.toml",
+    "generic_trait_lifetime/Cargo.toml",
+    "guessing_game/Cargo.toml",
+    "guessing_game-review/Cargo.toml",
+    "reference_test/Cargo.toml",
+    "structure/Cargo.toml",
+    "testing/Cargo.toml"
+  ]
+}

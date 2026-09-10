@@ -52,7 +52,7 @@ Attention：**在对象生命周期结束时释放资源**的模式，在C++中�
 
 #### move 移动
 
-在一些简单数据类型上，Rust会复制两个对象，并直接在栈上储存
+在一些简单数据类型上，Rust会复制两个对象，并直接在栈上储存。一个类型实现了 `Copy` trait （一般是标量类型），会在赋值时使用 Copy 的方法复制一个新的值出来，否则默认就会使用编译器提供的 Move 语义。
 
 ```rust
 let x = 5;
@@ -108,7 +108,7 @@ Rust提供`Copy trait`，可以用于整数这类**完全存储在栈上的数�
 
 
 
-## Refernces and Borrowing 引用与借用
+## References and Borrowing 引用与借用
 
 > 使用引用`Reference`可以使用参数的部分功能，但同时**不会拥有所有权**。
 
